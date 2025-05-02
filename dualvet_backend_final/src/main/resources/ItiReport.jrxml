@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="Excel_Like_Report" pageWidth="595" pageHeight="99999" columnWidth="555"
+              leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0"
+              uuid="81bf5e97-602a-4005-ac1e-dc620119b4d9">
+
+    <field name="sno" class="java.lang.Long"/>
+    <field name="state" class="java.lang.String"/>
+    <field name="district" class="java.lang.String"/>
+    <field name="itiName" class="java.lang.String"/>
+    <field name="itiEmailId" class="java.lang.String"/>
+    <field name="principalAndVicePrincipal" class="java.lang.String"/>
+    <field name="instructorName" class="java.lang.String"/>
+    <field name="instructorEmailId" class="java.lang.String"/>
+    <field name="trade" class="java.lang.String"/>
+    <field name="noOfTrainees" class="java.lang.Integer"/>
+    <field name="noOfSeatsAvailable" class="java.lang.Integer"/>
+
+    <background>
+        <band/>
+    </background>
+
+    <title>
+        <band height="20"/>
+    </title>
+
+    <pageHeader>
+        <band height="20"/>
+    </pageHeader>
+
+    <columnHeader>
+        <band height="20">
+            <!-- Column Headers -->
+            <staticText>
+                <reportElement x="0" y="0" width="40" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[S.No]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="40" y="0" width="200" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[State]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="240" y="0" width="200" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Cluster]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="440" y="0" width="200" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[ITI Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="640" y="0" width="300" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[ITI Email ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="940" y="0" width="300" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Principal/Vice-Principal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1240" y="0" width="300" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Instructor Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1540" y="0" width="300" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Instructor Email ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="1840" y="0" width="300" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Trade]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="2140" y="0" width="100" height="20"/>
+                <textElement textAlignment="Left">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <text><![CDATA[No of Students]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+
+    <detail>
+        <band height="20">
+            <!-- Field Values -->
+            <textField>
+                <reportElement x="0" y="0" width="40" height="20"/>
+                <textFieldExpression><![CDATA[$F{sno}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="40" y="0" width="200" height="20"/>
+                <textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="240" y="0" width="200" height="20"/>
+                <textFieldExpression><![CDATA[$F{district}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="440" y="0" width="200" height="20"/>
+                <textFieldExpression><![CDATA[$F{itiName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="640" y="0" width="300" height="20"/>
+                <textFieldExpression><![CDATA[$F{itiEmailId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="940" y="0" width="300" height="20"/>
+                <textFieldExpression><![CDATA[$F{principalAndVicePrincipal}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="1240" y="0" width="300" height="20"/>
+                <textFieldExpression><![CDATA[$F{instructorName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="1540" y="0" width="300" height="20"/>
+                <textFieldExpression><![CDATA[$F{instructorEmailId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="1840" y="0" width="300" height="20"/>
+                <textFieldExpression><![CDATA[$F{trade}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="2140" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{noOfTrainees}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="2140" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{noOfSeatsAvailable}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+
+    <summary>
+        <band height="20"/>
+    </summary>
+</jasperReport>

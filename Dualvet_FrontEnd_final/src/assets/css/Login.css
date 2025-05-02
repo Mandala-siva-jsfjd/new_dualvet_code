@@ -1,0 +1,131 @@
+
+.main-head {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  background-color: #DDEBF6; 
+
+}
+
+.main-head-logo {
+  width: 15rem;
+
+}
+
+.navbar-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-head {
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.welcome-title {
+  font-size: 2rem;
+}
+
+.brand-name {
+  font-size: 2rem;
+  color: #007BFF;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Login form container */
+.Login-main {
+  
+  width: 50%;
+  margin-top: 70px;
+  height: 100px;
+  text-align: right;
+  padding: 20px;
+  /* background-color: rgb(128, 122, 115); */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.login-container {
+  display: flex;
+}
+.or-text {
+  text-align: center !important;
+  margin-bottom: 15px !important;
+  font-weight: 600 !important;
+}
+
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main-head {
+    padding: 15px;
+
+  }
+
+  .home-head {
+    padding: 15px;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .Login-main {
+    width: 80%;
+    margin-top: 15px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .main-head {
+    padding: 10px;
+
+    
+  }
+
+  .home-head {
+   margin-left: -5px;
+   margin-top: -3px;
+  }
+
+  .welcome-title {
+    font-size: 1rem;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .Login-main {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-logo {
+    width: 150px; /* Adjust the size as needed for mobile */
+  }
+}

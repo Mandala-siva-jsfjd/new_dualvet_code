@@ -1,0 +1,35 @@
+
+.state-dropdown,
+.district-dropdown,
+.industry-dropdown,.container1{
+  margin-right: 20px; /* Adjust margin as needed */
+  display: inline-flex; /* Add this line */
+  max-width: 900px; /* Example maximum width for dropdowns */
+}
+
+.inplant-main{
+  height: auto;
+  background-color: #DDEBF6; 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 0px 20px 0;
+
+}
+@media (max-width: 600px) {
+  .state-dropdown,
+  .district-dropdown,
+  .industry-dropdown,
+  .container1 {
+    margin-right: 0; /* Remove right margin for mobile view */
+    display: block; /* Stack dropdowns vertically */
+    max-width: 100%; /* Full width for mobile view */
+    margin-bottom: 10px; /* Add bottom margin to separate elements */
+  }
+
+  .inplant-main {
+    height: auto;
+
+    padding: 15px; /* Reduce padding for mobile view */
+    margin: 20px 0; /* Adjust margin for mobile view */
+  }
+}

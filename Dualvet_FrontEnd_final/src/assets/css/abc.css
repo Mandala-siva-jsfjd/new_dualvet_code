@@ -1,0 +1,27 @@
+/* Adjust table header */
+.MuiTableHead-root {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  /* Zebra striping for rows */
+  .MuiTableRow-root:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect */
+  .MuiTableRow-root:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Button customization */
+  .MuiButton-root {
+    text-transform: none;
+    font-size: 14px;
+  }
+  
+  /* Pagination alignment */
+  .MuiTablePagination-toolbar {
+    justify-content: flex-end;
+  }
+  
