@@ -204,7 +204,7 @@ const Login = () => {
                     onClick={handleClick}
                     disabled={isLocked}
                   >
-                    Login
+                    Login and logout
                   </Button>
                   <Typography className="or-text">- OR -</Typography>
                   <GoogleOAuthProvider clientId={clientId}>
